@@ -1377,6 +1377,8 @@ h3 {
 /* line 7, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
 .about_area .about_info {
   padding-left: 68px;
+  background: rgba(59, 59, 59, 0.7);
+  padding: 20px;
 }
 
 @media (max-width: 767px) {
