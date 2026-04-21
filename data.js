@@ -24,6 +24,11 @@ const partners = [
     image: "img/partners/laroche.jpg"
   },
   {
+    name: "Pokemon Go",
+    size: 2600000,
+    image: "img/partners/pokemongo.jpg"
+  }
+  {
     name: "Akiba Station",
     size: 42400,
     image: "img/partners/akiba.jpg"
