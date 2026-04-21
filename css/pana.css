@@ -187,6 +187,7 @@ img { display: block; }
 
 .cards-scroll {
   overflow-x: auto;
+  padding-top: 8px;
   padding-bottom: 0.75rem;
 }
 .cards-grid {
