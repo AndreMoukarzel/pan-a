@@ -34,9 +34,19 @@ const partners = [
     image: "img/partners/akiba.jpg"
   },
   {
+    name: "Universidade Cruzeiro do Sul",
+    size: 76700,
+    image: "img/partners/cruzeiro.jpg"
+  },
+  {
     name: "Lumo Entertainment",
     size: 4000,
     image: "img/partners/lumo.jpg"
+  },
+  {
+    name: "Anime Hunter",
+    size: 22500,
+    image: "img/partners/anime_hunter.jpg"
   }
 ];
 

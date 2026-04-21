@@ -198,6 +198,29 @@ img { display: block; }
   margin-inline: auto;
 }
 
+/* ─── PARTNERS MARQUEE ────────────────────────────────────────────────────── */
+#parcerias .cards-scroll {
+  overflow: hidden;
+}
+#parcerias .cards-grid {
+  margin-inline: 0;
+  animation: partners-marquee linear infinite;
+  will-change: transform;
+}
+#parcerias .cards-scroll:hover .cards-grid {
+  animation-play-state: paused;
+}
+
+@keyframes partners-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #parcerias .cards-grid    { animation: none; }
+  #parcerias .cards-scroll  { overflow-x: auto; }
+}
+
 /* ─── PARTNER CARD ────────────────────────────────────────────────────────── */
 .partner-card {
   background: var(--dark-card);

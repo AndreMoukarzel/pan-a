@@ -27,7 +27,7 @@ function renderPartners() {
   const grid = document.getElementById('partners-grid');
   if (!grid) return;
 
-  grid.innerHTML = partners.map(p => `
+  const cardHTML = partners.map(p => `
     <div class="partner-card">
       <img src="${p.image}" alt="${p.name}" width="72" height="72"
            onerror="this.style.visibility='hidden'">
@@ -35,6 +35,13 @@ function renderPartners() {
       <p class="card-size">${formatSize(p.size)} seguidores</p>
     </div>
   `).join('');
+
+  // Duplicate cards so the marquee loops seamlessly
+  grid.innerHTML = cardHTML + cardHTML;
+
+  // Scale duration to number of partners (~60px/s, each card ~224px wide)
+  const duration = Math.max((partners.length * 224) / 60, 8);
+  grid.style.animationDuration = duration.toFixed(1) + 's';
 }
 
 function initCounter() {
