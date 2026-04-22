@@ -48,8 +48,23 @@
       <a href="#" class="logo" aria-label="Pan-A — página inicial">
         <img src="img/logo.png" alt="Pan-A">
       </a>
-      <a href="mailto:contato@pana-content.com" class="btn-cta"
-         aria-label="Enviar e-mail para contato@pana-content.com">
+
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Influenciadores <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-dropdown-menu" id="influencers-nav-menu" aria-label="Lista de influenciadores"></ul>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Blog <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul class="nav-dropdown-menu" id="blog-nav-menu" data-base="blog/" aria-label="Posts do blog"></ul>
+        </div>
+      </div>
+
+      <a href="#contato" class="btn-cta" aria-label="Entre em contato">
         Entre em contato
       </a>
     </nav>
@@ -73,7 +88,7 @@
         no público gamer e geek do Brasil. Criamos estratégias autênticas que
         conectam marcas a comunidades apaixonadas.
       </p>
-      <a href="mailto:contato@pana-content.com" class="btn-cta btn-cta-lg">
+      <a href="#contato" class="btn-cta btn-cta-lg">
         Entre em contato
       </a>
     </div>
@@ -126,10 +141,34 @@
     <div class="cta-block">
       <h2 id="contato-title">Pronto para alcançar o universo gamer?</h2>
       <p>Fale com a gente e descubra como a Pan-A pode transformar sua presença digital</p>
-      <a href="mailto:contato@pana-content.com" class="btn-cta btn-cta-lg"
-         aria-label="Enviar e-mail para contato@pana-content.com">
-        Entre em contato
-      </a>
+
+      <form class="contact-form" id="contact-form"
+            action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID"
+            method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="form-name">Nome *</label>
+            <input type="text" id="form-name" name="name" required placeholder="Seu nome">
+          </div>
+          <div class="form-group">
+            <label for="form-company">Empresa</label>
+            <input type="text" id="form-company" name="company" placeholder="Nome da empresa">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="form-email">E-mail *</label>
+          <input type="email" id="form-email" name="email" required placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="form-message">Mensagem *</label>
+          <textarea id="form-message" name="message" rows="5" required placeholder="Como podemos ajudar?"></textarea>
+        </div>
+        <button type="submit" class="btn-cta btn-cta-lg form-submit">Enviar mensagem</button>
+        <p class="form-success" id="form-success" hidden>
+          ✓ Mensagem enviada! Entraremos em contato em breve.
+        </p>
+      </form>
+
       <p class="cta-email">contato@pana-content.com</p>
     </div>
   </section>
@@ -159,6 +198,7 @@
   <!-- Scripts -->
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="data.js"></script>
+  <script src="blog-posts.js"></script>
   <script src="js/pana.js"></script>
 
 </body>

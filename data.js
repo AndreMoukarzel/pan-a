@@ -56,10 +56,15 @@ const partners = [
 //
 // Campos de cada influenciador:
 //   name        → Nome do influenciador
-//   personalUrl → Link para a página pessoal do influenciador (ex: "https://site.com.br")
-//                 Use null se não houver página pessoal
-//   image       → Caminho para a foto — aceita .jpg, .png, .svg, .webp
-//                 (ex: "img/influencers/nome.jpg" ou "img/influencers/nome.png")
+//   slug        → Identificador único para a URL (sem espaços, letras minúsculas,
+//                 hífens no lugar de espaços — ex: "ana-flicker")
+//   image       → Foto pequena (usada nos cards da página inicial)
+//                 (ex: "img/influencers/nome.jpg")
+//   fullImage   → Foto maior (usada na página de perfil individual)
+//                 Pode ser o mesmo caminho de image se não houver foto maior
+//   bio         → Texto curto de apresentação (1-3 frases)
+//   mediaKitUrl → Link para o Media Kit em PDF (Google Drive, Dropbox, etc.)
+//                 Use null se não houver media kit disponível
 //   networks    → Redes sociais presentes
 //              - url:  link do perfil
 //              - size: tamanho da audiência (ex: "520K", "1,2M")
@@ -68,8 +73,11 @@ const partners = [
 const influencers = [
   {
     name: "Ana Flicker",
-    personalUrl: "https://sites.google.com/pana-content.com/ana-flicker/",
+    slug: "ana-flicker",
     image: "img/influencers/ana_flicker.jpg",
+    fullImage: "img/influencers/ana_flicker.jpg",
+    bio: "Influencer com foco em games e assuntos geek, ela alcança centenas de milhares de seguidores através de seu bom humor e carisma enquanto fala de jogos, com grande foco em Pokémon e suas vertentes.",
+    mediaKitUrl: "https://drive.google.com/file/d/19_4m9rLEZWg5hRAgDTfLPG2rrGQ8t6yh/view",
     networks: {
       youtube:   null,
       instagram: { url: "https://www.instagram.com/ana.flicker/",  size: "23K" },
