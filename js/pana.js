@@ -145,6 +145,10 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
+  if (typeof config !== 'undefined' && config.formspreeId) {
+    form.action = `https://formspree.io/f/${config.formspreeId}`;
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
