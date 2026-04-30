@@ -47,6 +47,11 @@ const partners = [
     name: "Anime Hunter",
     size: 22500,
     image: "img/partners/anime_hunter.jpg"
+  },
+  {
+    name: "Ragnarok Online Latam",
+    size: 51900,
+    image: "img/partners/ragnarok_latam.jpg"
   }
 ];
 
@@ -75,13 +80,27 @@ const influencers = [
     name: "Ana Flicker",
     slug: "ana-flicker",
     image: "img/influencers/ana_flicker.jpg",
-    fullImage: "img/influencers/ana_flicker.jpg",
-    bio: "Influencer com foco em games e assuntos geek, ela alcança centenas de milhares de seguidores através de seu bom humor e carisma enquanto fala de jogos, com grande foco em Pokémon e suas vertentes.",
+    fullImage: "img/influencers/ana_flicker_big.png",
+    bio: "Com foco em games e assuntos geek, ela alcança centenas de milhares de seguidores através de seu bom humor e carisma enquanto fala de jogos, com grande foco em Pokémon e suas vertentes.",
     mediaKitUrl: "https://drive.google.com/file/d/19_4m9rLEZWg5hRAgDTfLPG2rrGQ8t6yh/view",
     networks: {
       youtube:   null,
       instagram: { url: "https://www.instagram.com/ana.flicker/",  size: "23K" },
       tiktok:    { url: "https://www.tiktok.com/@ana.flicker",    size: "130K"  },
+      twitch:    null
+    }
+  },
+  {
+    name: "Malu Lutfi",
+    slug: "malu-lutfi",
+    image: "img/influencers/malu_lutfi.jpg",
+    fullImage: "img/influencers/malu_lutfi.jpg",
+    bio: "Seu humor ácido e convicto de opiniões fortes torna a Malu a pessoa perfeita para engajar com assuntos cotidiados e inusitados igualmente!",
+    mediaKitUrl: "https://drive.google.com/file/d/1s9FwCXfVzsJVLg_qilV5TVAf9scF9j9D/view",
+    networks: {
+      youtube:   null,
+      instagram: { url: "https://www.instagram.com/malulutfi/",  size: "1.3K" },
+      tiktok:    null,
       twitch:    null
     }
   }
