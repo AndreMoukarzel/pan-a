@@ -85,8 +85,9 @@ const influencers = [
     mediaKitUrl: "https://drive.google.com/file/d/19_4m9rLEZWg5hRAgDTfLPG2rrGQ8t6yh/view",
     networks: {
       youtube:   null,
-      instagram: { url: "https://www.instagram.com/ana.flicker/",  size: "23K" },
-      tiktok:    { url: "https://www.tiktok.com/@ana.flicker",    size: "130K"  },
+      instagram: { url: "https://www.instagram.com/ana.flicker/",  size: "91K" },
+      tiktok:    { url: "https://www.tiktok.com/@ana.flicker",    size: "201K"  },
+      youtube:    { url: "https://www.tiktok.com/@ana.flicker",    size: "65K"  },
       twitch:    null
     }
   },
